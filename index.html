@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-color: hsl(30, 38%, 92%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container {
+        height: 450px;
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        width: 550px;
+        flex-direction: center;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        padding-right: 20px 20px;
+      }
+      .Western {
+        width: 300px;
+        border-radius: 10px 0px 0px 10px;
+        display: flex;
+      }
+      .button {
+        background-color: hsl(158, 42%, 18%);
+        color: white;
+      }
+      .meow {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        font-family: "Montserrat", sans-serif;
+      }
+      .PERFUME {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color-family: grey;
+      }
+      .price {
+        display: flex;
+      }
+      .omg {
+        display: flex;
+        color: hsl(158, 36%, 37%);
+        font-size: large;
+      }
+      .cart {
+        display: flex;
+      }
+      .lays {
+        text-decoration: line-through;
+        padding-left: 10px;
+      }
+      .attribution {
+        display: flex;
+        font-size: 11px;
+        text-align: center;
+        margin-top: 480px;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+      }
+      .button {
+        border: none;
+        border-radius: 5px;
+        width: 150px;
+        height: 40px;
+        margin-left: 10px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="Western"
+        src="images/image-product-desktop.jpg"
+        alt="perfume"
+      />
+      <div class="meow">
+        <p>P E R F U M E</p>
+        <h1>
+          Gabrielle<br />
+          Essence Eau De <br />
+          De Parfum
+        </h1>
+        <p class="PERFUME">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="price">
+          <p class="omg"><strong>$149.99</strong></p>
+          <p class="lays">$169.99</p>
+        </div>
+        <div class="cart">
+          <img src="images/icon-cart.svg" alt="icon-cart" />
+          <button class="button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <!--/*div="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.*/
+    </div>-->
+  </body>
+</html>
